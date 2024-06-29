@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="demo"></h2>
+</body>
+<script>
+    // let ar = []
+    // for(let j=0;j<5;j++){
+    //     ar[j] = parseInt(prompt("enter elements"));  // parseInt -> string value ko intizer me invert krta h
+    // }
+    // console.log(ar[j])
+
+
+
+
+    let ar=[1,2,3,4,5]
+    for(let val of ar){  // ye ak short formula h jisse pure array ki value mil jati h
+        console.log(val);
+        // document.getElementById("demo").innerHTML =val;
+        document.write("<h1>" + val + "</h1>")   // wright way of show on deckstop screen
+    }
+
+    let arr=[1,2,3,4,5]
+    ar.push(6,7,8,9,10);  // last me add krne ke liye 
+    ar.pop();           // last se htane ke liye .
+    ar.unshift(-3,-2,-1);
+    ar.shift();
+    console.log(ar);      
+</script>
+</html>
